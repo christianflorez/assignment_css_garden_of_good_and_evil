@@ -1,1 +1,20 @@
-<h1>hello world</h1>
+<div class="row">
+    <h3>Properties:</h3>
+    <form action="/update" method="POST">
+    <div class="six columns">
+        <label>
+            <input type="radio" name="alignment" value="good">
+            <span class="label-body">Good</span>
+        </label>
+        <label>
+            <input type="radio" name="alignment" value="evil">
+            <span class="label-body">Evil</span>
+        </label>
+    </div>
+    <div class="six columns">
+      <label for="favoriteFood">Favorite Food</label>
+      <input class="u-full-width" type="email" placeholder="Bacon, Tofu, Jambalaya, etc." id="favoriteFood">
+    </div>
+    <input class="button-primary" type="submit" value="Submit">
+    </form>
+</div>
