@@ -14,18 +14,18 @@
 </head>
 <body class="alignment-{{alignment}} insanity-{{insanity}}">
     <div class="container">
-        <div class="row">
+        <div class="row {{alignment}}-{{color}}">
             <h1>The CSS Garden of Good and Evil</h1>
         </div>
         <hr>
         <section>    
             <form action="/update" method="POST">
-                    <h3>Properties:</h3>
+                    <h3 class="{{alignment}}-{{color}}">Properties:</h3>
                 <div class="row">
                     <div class="six columns">
                         <label for="alignment">Alignment</label>
                         <label>
-                            <input type="radio" name="alignment" value="good">
+                            <input type="radio" name="alignment" value="good" checked>
                             <span class="label-body">Good</span>
                         </label>
                         <label>
@@ -35,13 +35,13 @@
                     </div>
                     <div class="six columns">
                         <label for="favoriteFood">Favorite Food</label>
-                        <input class="u-full-width" type="text" placeholder="Bacon, Tofu, Jambalaya, etc." id="favoriteFood">
+                        <input class="u-full-width" type="text" placeholder="Bacon, Tofu, Jambalaya, etc." id="favoriteFood" name="favoriteFood">
                     </div>
                 </div>
                 <div class="row">
                     <div class="six columns">
                         <label for="insanity">Insanity Level</label>
-                        <input class="u-full-width" type="range" name="insanity" min="0" max="4">
+                        <input class="u-full-width" type="range" name="insanity" min="0" max="4" value="{{insanity}}">
                     </div>
                     <div class="six columns">
                         <label for="favoriteColor">Favorite Color</label>
@@ -59,7 +59,7 @@
         </section>
 
         <hr>
-        
+
         {{{ body }}}
     </div>
 </body>

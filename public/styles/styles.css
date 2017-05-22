@@ -1,15 +1,6 @@
 h1 {
     margin-top: .5em;
 }
-html {
-    /*unicode-bidi: bidi-override;*/
-    /*transform: rotate(128deg);*/
-    /*transform: translate3d(1,2,3);*/
-    /*direction: rtl;*/
-    /*letter-spacing: 5px;*/
-    /*background-color: black;*/
-    /*color: red;*/
-}
 
 .alignment-good h1 {
     font-family: 'Dynalight', cursive;
@@ -37,7 +28,40 @@ html {
     transform: rotate(80deg);
 }
 
-/*.insanity-4 {
+.insanity-4 {
     letter-spacing: 25px;
     transform: rotate(108deg);
-}*/
+}
+
+.good-blue {
+    color: #2176FF;
+}
+.good-red {
+    color: #F3363A;
+}
+.good-green {
+    color: #6EEB83;
+}
+.good-orange {
+    color: #FF7E14;
+}
+.good-yellow {
+    color: #FDCA40;
+}
+
+.evil-blue {
+    color: #FFA60B;
+}
+
+.evil-red {
+    color: #34C72C;
+}
+.evil-green {
+    color: #FF8177;
+}
+.evil-orange {
+    color: #0C9999;
+}
+.evil-yellow {
+    color: #3E49AF;
+}

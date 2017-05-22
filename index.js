@@ -30,6 +30,14 @@ app.get('/', (req, res) => {
     });
 });
 
+app.post("/update", (req, res) => {
+    res.cookie("alignment", req.body.alignment);
+    res.cookie("favoriteFood", req.body.favoriteFood);
+    res.cookie("favoriteColor", req.body.favoriteColor);
+    res.cookie("insanity", req.body.insanity);
+    res.redirect("back");
+});
+
 app.listen(port, () => {
     console.log(`Currently listening on Port ${ port }`);
 });

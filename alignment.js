@@ -3,7 +3,7 @@ const ALIGNMENT_DEFAULT = "evil";
 // readfile is used instead of require in order to prevent
 // the json from caching, which damages insanity module functionality
 const _getPageText= (alignment) => {
-  let json = JSON.parse(require('fs').readFileSync('./config.json', 'utf8'));
+  let json = JSON.parse(require('fs').readFileSync('./data/content.json', 'utf8'));
   return json[alignment];
 };
 

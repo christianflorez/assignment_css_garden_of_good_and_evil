@@ -8,10 +8,12 @@ const favoritesMiddleware = (req, res, next) => {
   req.favoriteFood = favoriteFood;
   req.favoriteColor = favoriteColor;
 
+  req.pageText.biography.p4 = req.pageText.biography.p4 + favoriteFood.toLowerCase() + ".";
+
   if (req.alignment === "good") {
-    req.pageText.likes.push(favoriteFood, favoriteColor);
+    req.pageText.likes.push(favoriteFood, `The color ${ favoriteColor }`);
   } else if (req.alignment === "evil") {
-    req.pageText.dislikes.push(favoriteFood, `The Color ${ favoriteColor }`);
+    req.pageText.dislikes.push(favoriteFood, `The color ${ favoriteColor }`);
   }
   next();
 };

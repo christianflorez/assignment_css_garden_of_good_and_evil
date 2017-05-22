@@ -1,6 +1,6 @@
 <section class="row">
     <div class="six columns">
-        <h4>Likes</h4>
+        <h4 class="{{alignment}}-{{color}}">Likes</h4>
         <ul>
             
             {{#each pageText.likes}}
@@ -9,7 +9,7 @@
         </ul>
     </div>
     <div class="six columns">
-        <h4>Dislikes</h4>
+        <h4 class="{{alignment}}-{{color}}">Dislikes</h4>
         <ul>
             {{#each pageText.dislikes}}
                 <li>{{this}}</li>
@@ -20,19 +20,20 @@
 <hr>
 <section class="row">
     <div class="twelve columns">
-    <h4>Biography</h4>
+    <h4 class="{{alignment}}-{{color}}">Biography</h4>
 
     <p>{{pageText.biography.p1}}</p>
     <p>{{pageText.biography.p2}}</p>
     <p>{{pageText.biography.p3}}</p>
+    <p>{{pageText.biography.p4}}</p>
     </div>
 </section>
 <hr>
 <section class="row">
     <div class="twelve columns">
-        <h4>Resume</h4>
+        <h4 class="{{alignment}}-{{color}}">Resume</h4>
         {{#each pageText.resume.positions}}
-            <h5>Position: {{@key}}</h5>
+            <h5 class="{{../alignment}}-{{../color}}">Position: {{@key}}</h5>
             <ul>
             {{#each this}}
                 <li>{{this}}</li>
