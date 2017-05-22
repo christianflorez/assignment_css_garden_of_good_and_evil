@@ -5,16 +5,61 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>CSS Garden of Good and Evil</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Dynalight|Butcherman|Flavors" rel="stylesheet">
+
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/skeleton.css">
     <link rel="stylesheet" href="styles/styles.css">
 </head>
-<body>
+<body class="alignment-{{alignment}} insanity-{{insanity}}">
     <div class="container">
         <div class="row">
             <h1>The CSS Garden of Good and Evil</h1>
         </div>
         <hr>
+        <section>    
+            <form action="/update" method="POST">
+                    <h3>Properties:</h3>
+                <div class="row">
+                    <div class="six columns">
+                        <label for="alignment">Alignment</label>
+                        <label>
+                            <input type="radio" name="alignment" value="good">
+                            <span class="label-body">Good</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="alignment" value="evil">
+                            <span class="label-body">Evil</span>
+                        </label>
+                    </div>
+                    <div class="six columns">
+                        <label for="favoriteFood">Favorite Food</label>
+                        <input class="u-full-width" type="text" placeholder="Bacon, Tofu, Jambalaya, etc." id="favoriteFood">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="six columns">
+                        <label for="insanity">Insanity Level</label>
+                        <input class="u-full-width" type="range" name="insanity" min="0" max="4">
+                    </div>
+                    <div class="six columns">
+                        <label for="favoriteColor">Favorite Color</label>
+                        <select class="u-full-width" name="favoriteColor" id="favoriteColor">
+                            <option value="blue">Blue</option>
+                            <option value="red">Red</option>
+                            <option value="green">Green</option>
+                            <option value="orange">Orange</option>
+                            <option value="yellow">Yellow</option>
+                        </select>
+                    </div>
+                </div>
+                <input class="button-primary" type="submit" value="Submit">
+            </form>
+        </section>
+
+        <hr>
+        
         {{{ body }}}
     </div>
 </body>

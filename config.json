@@ -1,0 +1,56 @@
+{
+  "good": {
+    "likes": ["Puppies", "Hugs", "Smiles", "Doves", "Friendship"],
+    "dislikes": ["Goat Hooves", "Cthulhu", "Ancient Curses", "Summoning Eldritch Horrors From Beyond the Abyss", "Lying"],
+    "biography": {
+      "p1": "From birth, Johnny Dogood had a penchant for friendship. Everywhere he went, he would greet everyone with a smile. His parents knew he was special from a young age because of the golden halo that always surrounded him. Johnny was destined to help others.",
+      "p2": "During high school, Johnny made sure to always volunteer at the local soup kitchen. Everyone knew that he was someone that they could trust. This lead to lots of friends.",
+      "p3": "After a brief stint in the army, Johnny graduated college. Then, he started his career working as a doctor at the local hospital. He has saved many lives with his powers. Truly, Johnny leads a blessed life."
+    },
+    "resume": {
+      "positions": {
+        "Doctor": [
+          "Saves the lives of children", 
+          "Changes the world with a smile", 
+          "Educates the young on healthy living"
+        ], 
+        "Soldier": [
+          "Defended the country from evil", 
+          "Rescued innocent civilians from danger", 
+          "Brought food to impoverished lands"
+        ], 
+        "Volunteer": [
+          "Fed the homeless", 
+          "Educated the community" 
+        ]
+      }
+    }
+  },
+  "evil": {
+    "likes": ["Goat Hooves", "Cthulhu", "Ancient Curses", "Summoning Eldritch Horrors From Beyond the Abyss", "Lying"],
+    "dislikes": ["Puppies", "Hugs", "Smiles", "Doves", "Friendship"],
+    "biography": {
+      "p1": "From birth, Johnny Doevil had a penchant for making enemies. Everywhere he went, he would greet everyone with a grimace. His parents knew he was special from a young age because of the blackened aura that always surrounded him. Johnny was destined to destroy others.",
+      "p2": "During high school, Johnny made sure to always perform black magic rituals in his backyard every night. Everyone knew that he was someone that they should avoid. This lead to lots of enemies.",
+      "p3": "After a brief stint in the army of the dark wizard, Johnny graduated warlock college. Then, he started his career working as a necromancer at the local morgue. He has reanimated many corpses with his powers. Truly, Johnny leads a dark life."
+    },
+    "resume": {
+      "positions": {
+        "Necromancer": [
+          "Chant incantations to Cthulhu to reanimate the dead", 
+          "Create vile concoctions of a nefarious nature", 
+          "Harvest corpses for reanimating purposes"
+        ], 
+        "Warlock": [
+          "Regularly summoned abominations from far off dimensions", 
+          "Cast plagues and famine upon the local population", 
+          "Made infernal pacts with demons from beyond the abyss"
+        ], 
+        "Acolyte to the Demon Lord": [
+          "Fed the hellfire with souls of the damned", 
+          "Educated the local demon populace on proper demon-channeling practices" 
+        ]
+      }
+    }
+  }
+}

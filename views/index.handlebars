@@ -1,63 +1,19 @@
-<section>    
-    <form action="/update" method="POST">
-            <h3>Properties:</h3>
-        <div class="row">
-            <div class="six columns">
-                <label for="alignment">Alignment</label>
-                <label>
-                    <input type="radio" name="alignment" value="good">
-                    <span class="label-body">Good</span>
-                </label>
-                <label>
-                    <input type="radio" name="alignment" value="evil">
-                    <span class="label-body">Evil</span>
-                </label>
-            </div>
-            <div class="six columns">
-                <label for="favoriteFood">Favorite Food</label>
-                <input class="u-full-width" type="text" placeholder="Bacon, Tofu, Jambalaya, etc." id="favoriteFood">
-            </div>
-        </div>
-        <div class="row">
-            <div class="six columns">
-                <label for="insanity">Insanity Level</label>
-                <input class="u-full-width" type="range" name="insanity" min="0" max="5">
-            </div>
-            <div class="six columns">
-                <label for="favoriteColor">Favorite Color</label>
-                <select class="u-full-width" name="favoriteColor" id="favoriteColor">
-                    <option value="blue">Blue</option>
-                    <option value="red">Red</option>
-                    <option value="green">Green</option>
-                    <option value="orange">Orange</option>
-                    <option value="yellow">Yellow</option>
-                </select>
-            </div>
-        </div>
-        <input class="button-primary" type="submit" value="Submit">
-    </form>
-</section>
-<hr>
 <section class="row">
     <div class="six columns">
         <h4>Likes</h4>
         <ul>
-            <li>Puppies</li>
-            <li>Hugs</li>
-            <li>Smiles</li>
-            <li>Doves</li>
-            <li>Friendship</li>
-            <li>Favorite Food</li>
+            
+            {{#each pageText.likes}}
+                <li>{{this}}</li>
+            {{/each}}
         </ul>
     </div>
     <div class="six columns">
         <h4>Dislikes</h4>
         <ul>
-            <li>Goat Hooves</li>
-            <li>Cthulhu</li>
-            <li>Ancient Curses</li>
-            <li>Summoning Eldritch Horrors From Beyond the Abyss</li>
-            <li>Lying</li>
+            {{#each pageText.dislikes}}
+                <li>{{this}}</li>
+            {{/each}}
         </ul>
     </div>
 </section>
@@ -65,31 +21,23 @@
 <section class="row">
     <div class="twelve columns">
     <h4>Biography</h4>
-    <p>From birth, Johnny Dogood had a penchant for friendship. Everywhere he went, he would greet everyone with a smile. His parents knew he was special from a young age because of the golden halo that always surrounded him. Johnny was destined to help others.</p>
-    <p>During high school, Johnny made sure to always volunteer at the local soup kitchen. Everyone knew that he was someone that they could trust. This lead to lots of friends.</p>
-    <p>After a brief stint in the army, Johnny graduated college. Then, he started his career working as a doctor at the local hospital. He has saved many lives with his powers. Truly, Johnny leads a blessed life.</p>
+
+    <p>{{pageText.biography.p1}}</p>
+    <p>{{pageText.biography.p2}}</p>
+    <p>{{pageText.biography.p3}}</p>
     </div>
 </section>
 <hr>
 <section class="row">
     <div class="twelve columns">
         <h4>Resume</h4>
-        <h5>Position: Doctor</h5>
-        <ul>
-            <li>Saves the lives of children</li>
-            <li>Changes the world with a smile</li>
-            <li>Educates the young on healthy living</li>
-        </ul>
-        <h5>Position: Soldier</h5>
-        <ul>
-            <li>Defended the country from evil</li>
-            <li>Rescued innocent civilians from danger</li>
-            <li>Brought food to impoverished lands</li>
-        </ul>
-        <h5>Position: Soup Kitchen Volunteer</h5>
-        <ul>
-            <li>Fed the homeless</li>
-            <li>Educated the community</li>
-        </ul>
+        {{#each pageText.resume.positions}}
+            <h5>Position: {{@key}}</h5>
+            <ul>
+            {{#each this}}
+                <li>{{this}}</li>
+            {{/each}}
+            </ul>
+        {{/each}}
     </div>
 </section>

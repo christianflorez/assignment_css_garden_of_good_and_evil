@@ -1,3 +1,43 @@
 h1 {
     margin-top: .5em;
 }
+html {
+    /*unicode-bidi: bidi-override;*/
+    /*transform: rotate(128deg);*/
+    /*transform: translate3d(1,2,3);*/
+    /*direction: rtl;*/
+    /*letter-spacing: 5px;*/
+    /*background-color: black;*/
+    /*color: red;*/
+}
+
+.alignment-good h1 {
+    font-family: 'Dynalight', cursive;
+}
+
+.alignment-evil h1 {
+    font-family: 'Butcherman', cursive;
+}
+
+.alignment-evil {
+    background-color: black;
+    color: red;
+}
+
+.insanity-1 {
+    transform: rotate(1deg);
+}
+.insanity-2 {
+    letter-spacing: 2px;
+    transform: rotate(15deg);
+}
+
+.insanity-3 {
+    letter-spacing: 10px;
+    transform: rotate(80deg);
+}
+
+/*.insanity-4 {
+    letter-spacing: 25px;
+    transform: rotate(108deg);
+}*/
